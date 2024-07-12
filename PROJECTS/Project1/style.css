@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+width: 100vw;
+height: 100vh;
+align-items: center;
+}
+
+div{
+background: #9c958a;
+color: hsl(33, 42%, 9%);
+font-size: 23px;
+width: 800px;
+height: 800px;
+margin: auto;
+margin-top: 20px;
+}
+
+img{
+height: 300px;
+width: 300px;
+align-items: center;
+}

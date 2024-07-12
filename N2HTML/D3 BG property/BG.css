@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color:black;   
+}
+section{
+    width: 100%;
+    height: 70%;
+    background-color: lightcoral;
+    /* background-image: url('https://media.timeout.com/images/106041640/image.jpg');  Absolute Path*/
+    background-image: url('./images/BGimage.jpg'); /* Relative Path*/
+    /* background-size:100% 100%; */
+    background-size: 400px 300px;
+    background-repeat: no-repeat;
+    background-position: bottom 100px right 300px;
+}
