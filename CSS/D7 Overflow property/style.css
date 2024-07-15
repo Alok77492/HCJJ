@@ -16,5 +16,6 @@ body{
     font-size: 25px;
     overflow:scroll;
     text-align: justify;
-    padding: 10px 25px;    
+    padding: 10px 25px;   
+    scrollbar-width:none;
 }

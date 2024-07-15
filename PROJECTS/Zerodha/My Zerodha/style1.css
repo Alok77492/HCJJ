@@ -9,8 +9,9 @@
 }
 
 body{
-    width: 100vw;
-    height: 100vh;
+    width: calc(100%-22px);
+    padding-top: 67px;
+    min-width: 350px;
 }
 
 #head{
@@ -23,13 +24,13 @@ body{
 }
 
 .head-container{
-    width: 1094px;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content:space-between;
     align-items: center;
-    margin-left: 125px;
-    margin-right: 125px;
+    margin-left: 15%;
+    margin-right: 15%;
     text-decoration: none;
 }
 
@@ -48,11 +49,12 @@ body{
     width: 623px;
     height: 100%;
     display: flex;
-    justify-content:flex-end;
+    justify-content:center;
     align-items:center;
     gap: 0px 2.7rem;
     font-weight: 400;
     font-stretch: 100%;
+    z-index: 10;
 
 }
 
