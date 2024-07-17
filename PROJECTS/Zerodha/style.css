@@ -5,6 +5,7 @@
     padding: 0;
     font: 16px;
     font-family: inter, serif;
+    text-decoration: none;
 }
 
 .navbar {
@@ -143,7 +144,6 @@ flex-direction: column;
     align-items: center;
     background: hsl(0, 0%, 100%);
     font-weight: 500;
-
 }
 
 .lb-content > h1{
@@ -191,18 +191,47 @@ flex-direction: column;
 .ecosystem{
     height: 777px;
     width: 1100px;
-    background: hsl(0, 37%, 67%);
+    background: hsl(0, 37%, 67%);  
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin: auto;
+    
 }
 
 .ecosystem-image > img{
     width: 600px;
     height: 589px;
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content:flex-end;
+    align-items: flex-end;
     flex-direction: row;
+    margin-left: 500px;
+    
+}
+
+.ecosystem-items{
+
+    height: 29px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left: 500px;
+    display: flex;
+    justify-content:space-around;
+    align-items:flex-end;
+}
+
+.ecosystem-contents{
+    width: 433px;
+    height: 548px;
+    background: hwb(98 29% 17%);
+    display:inline-block;
+    justify-content: flex-start;
+
+    margin-top: -600px;
+}
+
+.ecosystem-contents > h2{
+    font-size: 32px;
+    font-weight: 500;
 }
