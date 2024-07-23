@@ -82,9 +82,16 @@ section.children[2].style.cssText="background-color:black;color:white;"
 section.children[4].style.cssText="background-color:black;color:white;"
 */
 
-
-//for(let i=0; i< Section.children.length; i++)
-  //  if(i%2!=0)
+const section=document.querySelector('section')
+for (let i = 0; i < section.children.length; i++) {
+   if(i%2!==0)
+       {
+            section.children[i].style.cssText="color:orange;"
+        }  
+        else{
+            section.children[i].style.cssText="color:aqua;"
+        }
+}
 
 
 /*
@@ -94,7 +101,7 @@ section.children[4].style.cssText="background-color:black;color:white;"
         //section.removeChild(remove)
         section.children[2].remove()  //position get changed after removing
         section.children[3].remove()  //position get changed after removing
-*/
+
 
 //set attributes("id","chomu")
 //set attributes("class","chomi")
@@ -104,3 +111,4 @@ section.setAttribute("id","parent")
 section.setAttribute('class','box')
 
 removeAttribute("class")
+*/
