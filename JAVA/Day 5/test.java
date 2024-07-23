@@ -1,4 +1,4 @@
-class test
+class test1
 {
 	public static void test()
 	{

@@ -11,6 +11,7 @@ class Smallest
 		System.out.println("Enter the 3rd Number: ");
 		int num3=sc.nextInt();
 		getSmallest(num1, num2, num3);
+		sc.close();
 	}
 	public static void getSmallest(int a, int b, int c)
 	{

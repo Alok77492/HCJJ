@@ -1,9 +1,7 @@
 class Prgm7
 {
 
-    private static boolean square;
-	
-	public static void main(String[] args)
+    public static void main(String[] args)
 	{
 		System.out.println("main method of Program7 starts");
 		int x=15;

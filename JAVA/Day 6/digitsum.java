@@ -8,6 +8,7 @@ class DigitSum
 		int n=sc.nextInt();
 		int sum=getDigitSum(n);
 		System.out.println("Total digit Sum: "+sum);
+		sc.close();
 	}
 	public static int getDigitSum(int n)
 	{

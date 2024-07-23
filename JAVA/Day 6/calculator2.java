@@ -12,6 +12,7 @@ class Calculator2
 		int b=sc.nextInt();
 		int sum=a+b;
 		System.out.println(a+"+"+b+"= "+sum);
+		sc.close();
 	}
 
 	public static void main(String[] args)
@@ -37,6 +38,7 @@ class Calculator2
 		int b=sc.nextInt();
 		int diff=a-b;
 		System.out.println(a+"-"+b+"= "+diff);
+		sc.close();
 	}
 	public static void multiply()
 	{
@@ -48,6 +50,7 @@ class Calculator2
 		int b=sc.nextInt();
 		int mul=a*b;
 		System.out.println(a+"*"+b+"= "+mul);
+		sc.close();
 	}
 	public static void div()
 	{
@@ -59,6 +62,7 @@ class Calculator2
 		int b=sc.nextInt();
 		int quot=a/b;
 		System.out.println(a+"/"+b+"= "+quot);
+		sc.close();
 	}
 
 

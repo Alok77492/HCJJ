@@ -24,6 +24,7 @@ class Calculator1
 		System.out.println("=============");
 		div(num1,num2);
 		System.out.println("Main Ends!!");
+		sc.close();
 	}
 
 	public static void subtract(int a, int b)

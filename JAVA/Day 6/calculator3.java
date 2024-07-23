@@ -6,12 +6,14 @@ class Calculator4
 	{
 		System.out.println("This is add method");
 		Scanner sc=new Scanner(System.in);
+		sc.close();
 		System.out.println("ENter 1st Number: ");
 		int a=sc.nextInt();
 		System.out.println("ENter 2nd Number: ");
 		int b=sc.nextInt();
 		int sum=a+b;
 	return sum;
+	
 	}
 
 	public static void main(String[] args)
@@ -35,6 +37,7 @@ class Calculator4
 	{
 		System.out.println("This is subtract method");
 		Scanner sc=new Scanner(System.in);
+		sc.close();
 		System.out.println("ENter 1st Number: ");
 		int a=sc.nextInt();
 		System.out.println("ENter 2nd Number: ");
@@ -46,6 +49,7 @@ class Calculator4
 	{
 		System.out.println("This is multiply method");
 		Scanner sc=new Scanner(System.in);
+		sc.close();
 		System.out.println("ENter 1st Number: ");
 		int a=sc.nextInt();
 		System.out.println("ENter 2nd Number: ");
@@ -57,6 +61,7 @@ class Calculator4
 	{
 		System.out.println("This is divide method");
 		Scanner sc=new Scanner(System.in);
+		sc.close();
 		System.out.println("ENter 1st Number: ");
 		int a=sc.nextInt();
 		System.out.println("ENter 2nd Number: ");

@@ -11,6 +11,7 @@ class Discount
 
 		double actual_price=getDiscountedPrice(price, perdisc);
 		System.out.println("Price after discount is: "+actual_price);
+		sc.close();
 	}
 	public static double getDiscountedPrice(double price, double perdis)
 	{

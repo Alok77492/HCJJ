@@ -1,5 +1,5 @@
 
-class drive
+class drive1
 {
 	public static void stop()
 	{

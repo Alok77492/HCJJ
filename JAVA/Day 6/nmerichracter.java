@@ -8,6 +8,7 @@ class NumericCharacter
 		char k=sc.next().charAt(0);
 		
 		checkCharacter(k);
+		sc.close();
 	}
 	public static void checkCharacter(char c)
 	{
