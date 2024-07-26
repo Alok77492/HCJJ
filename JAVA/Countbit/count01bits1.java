@@ -1,4 +1,4 @@
-class countbits
+class count01bits1
 {
 	public static void main(String[] args)
 	{

@@ -1,5 +1,5 @@
 
-class Calculator
+class Calculator0
 {
 	public static void add()
 	{

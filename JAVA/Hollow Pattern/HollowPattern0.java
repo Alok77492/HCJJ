@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class pyramid
+class HollowPattern0
 {
 	public static void main(String[] args)
 	{
@@ -7,18 +7,18 @@ class pyramid
 		System.out.println("ENter the Number: ");
 		int n=sc.nextInt();
 		sc.close();
-		printPyramid(n);
+		printPattern(n);
 	}
-	public static void printPyramid(int n){
-		int space=n-1;	int star=1;
+	public static void printPattern(int n){
 		for(int i=1;i<=n;i++){
-			for(int j=1;j<=space;j++)
-					System.out.print("  ");
-			for(int j=1;j<=star;j++)
+			for(int j=1;j<=n;j++){
+				if(i==1 || i==n ||j==1 ||j==n)
 					System.out.print("* ");
-		space--;
-		star+=2;
-		System.out.println();
+				else
+					System.out.print("  ");
+			}
+			System.out.println();
 		}
 	}	
 }
+

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Matrix
+class matrix0
 {
 	public static void main(String[] args)
 	{

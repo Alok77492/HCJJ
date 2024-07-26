@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class count01bits
+class count01bits0
 {
 	@SuppressWarnings("resource")
 	public static void main(String[] args)
