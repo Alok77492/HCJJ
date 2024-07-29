@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 class Calculator4
 {
@@ -15,7 +14,6 @@ class Calculator4
 	return sum;
 	
 	}
-
 	public static void main(String[] args)
 	{
 		System.out.println("main Starts");
@@ -32,7 +30,6 @@ class Calculator4
 		System.out.println("Quotient is:"+qu);
 		System.out.println("Main Ends!!");
 	}
-
 	public static int subtract()
 	{
 		System.out.println("This is subtract method");

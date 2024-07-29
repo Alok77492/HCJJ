@@ -1,9 +1,7 @@
-
 import java.util.Scanner;
 class Calculator2
 {
-	public static void add()
-	{
+	public static void add(){
 		System.out.println("This is add method");
 		Scanner sc=new Scanner(System.in);
 		System.out.println("ENter 1st Number: ");
@@ -14,9 +12,7 @@ class Calculator2
 		System.out.println(a+"+"+b+"= "+sum);
 		sc.close();
 	}
-
-	public static void main(String[] args)
-	{
+	public static void main(String[] args){
 		System.out.println("main Starts");
 		add();
 		System.out.println("=============");
@@ -27,9 +23,8 @@ class Calculator2
 		div();
 		System.out.println("Main Ends!!");
 	}
-
 	public static void subtract()
-	{
+{
 		System.out.println("This is subtract method");
 		Scanner sc=new Scanner(System.in);
 		System.out.println("ENter 1st Number: ");
@@ -40,8 +35,7 @@ class Calculator2
 		System.out.println(a+"-"+b+"= "+diff);
 		sc.close();
 	}
-	public static void multiply()
-	{
+	public static void multiply(){
 		System.out.println("This is multiply method");
 		Scanner sc=new Scanner(System.in);
 		System.out.println("ENter 1st Number: ");
@@ -52,8 +46,7 @@ class Calculator2
 		System.out.println(a+"*"+b+"= "+mul);
 		sc.close();
 	}
-	public static void div()
-	{
+	public static void div(){
 		System.out.println("This is divide method");
 		Scanner sc=new Scanner(System.in);
 		System.out.println("ENter 1st Number: ");
@@ -64,9 +57,6 @@ class Calculator2
 		System.out.println(a+"/"+b+"= "+quot);
 		sc.close();
 	}
-
-
-
 }
 
 

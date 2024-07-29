@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 class Count01Bit2
 {
