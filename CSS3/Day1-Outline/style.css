@@ -1,0 +1,32 @@
+.outline{
+    border: 5px solid green;
+    outline: 5px solid orange;
+    outline-offset: 5px;
+}
+
+p{
+    color: red;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 30px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    text-decoration: overline;
+    letter-spacing: 4px;
+}
+
+h2{
+    word-spacing: 10px;  
+    text-transform: capitalize; 
+}
+
+h1{
+    text-shadow: 2px 1px 5px yellow;
+    ts
+}

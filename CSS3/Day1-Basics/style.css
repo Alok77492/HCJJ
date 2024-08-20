@@ -1,0 +1,27 @@
+h1{
+    color:blueviolet;
+}
+
+h3{
+    color: #2427d1; 
+    font-size: 30px;
+}
+
+#yellow{
+    color: rgb(198, 179, 132);
+}
+
+*{
+    color: red;
+    line-height: 0.5;
+}
+
+.grey{
+    color: grey;
+}
+
+h5, h6{
+    color: #2427d1;
+}
+
+/*This is used to put comment in css.*/

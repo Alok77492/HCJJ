@@ -1,7 +1,7 @@
 /* Tag Name or Element Selector */
 /* div{
     color: red;
-} */
+} 
 
 /* Id Selector # */
 /* #div1{
@@ -17,13 +17,15 @@
     color: red;
 } */
 
-/* Universal Selector * */
-*{
+ /*Universal Selector */ 
+/* *{
     background-color: black;
     color: white;
 }
+ */   
 
 /* Grouping Selector */
-#div2,.heading{
-    color: aqua;
+  #div2,.heading{
+    color: #357878;
 }
+    

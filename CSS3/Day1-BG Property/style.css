@@ -1,0 +1,79 @@
+body{
+    background-image: url(nature.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.brand{
+    background-image: url(nature.jpg);
+    height: 900px;
+    width: 300px;
+    background-size: 100% 100%;
+    border: 2px solid black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+    padding: 10px;
+    color: rgb(255, 247, 0);
+}
+
+
+#Infinix{
+    color: green;
+}
+
+#Redmi{
+    color: initial;
+}
+
+#OnePlus{
+    color: inherit;
+}
+
+#Nothing{
+    color: purple;
+}
+
+h2{
+    background-image: linear-gradient(red,white,green);
+}
+
+h1{
+    height: 140px;
+    width: 240px;
+    color: darkblue;
+    font-size: 20px;
+}
+
+#lg{
+    background-image: linear-gradient(red,orange,yellow);
+}
+
+#rlg{
+    background-image: repeating-linear-gradient(red,orange,yellow 33%);
+}
+
+#rg{
+    background-image: radial-gradient(red,orange,yellow);
+}
+
+#rrg{
+    background-image: repeating-radial-gradient(red,orange,yellow 50%);
+}
+
+#rgcs{
+    background-image: radial-gradient(closest-side at 70% 30%, red,orange,yellow);
+}
+
+#rgfs{
+    background-image: radial-gradient(farthest-side at 30% 70%, red,orange,yellow);
+}
+
+.clip{
+    border: 5px dotted green;
+    padding: 20px;
+    background-color: rgb(128, 0, 128,0.6);
+    background-clip: padding-box;
+}
