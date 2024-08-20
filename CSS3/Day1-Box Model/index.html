@@ -4,7 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Model</title>
-    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body{
+    background-color: rgb(200, 0, 0);
+}
+
+.solid{
+    border: 5px solid;
+    border-color: blue;
+    border-radius: 10px;
+}
+
+.dotted{
+    border: dotted;
+    border-width: thick;
+    border-radius: 10px;
+}
+
+.double{
+    border:double;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.groove{
+    border: groove;
+    border-width: medium;
+}
+
+.ridge{
+    border: 5px ridge;
+}
+
+.dashed{
+    border: dashed;
+    border-width: thin;
+}
+
+.inset{
+    border: 5px inset;
+    padding-left: 90px;
+    padding-top: 50px;
+}
+
+.outset{
+    border: 5px outset;
+    margin: 30px 50px 20px;
+}
+
+.mix1{
+    border: 5px;
+    border-top-style: solid;
+    border-bottom-style: dotted;
+    border-right-style: double;
+    border-left-style: groove;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-left: 30px;
+
+}
+
+.mix2{
+    border: 5px;
+    border-top-style: ridge;
+    border-bottom-style: dashed;
+    border-right-style: inset;
+    border-left-style: outset;
+    border-radius: 10px;
+    margin: 20px 40px;
+}
+  </style>      
 </head>
 <body>
     <div class="solid">
