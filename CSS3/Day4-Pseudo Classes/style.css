@@ -1,0 +1,23 @@
+h2:first-child{
+color: blue;
+}
+
+h2:last-child{
+    color: yellow;
+}
+
+h2:only-child{
+    color: brown;
+}
+
+h2:first-of-type{
+    color: teal;
+}
+
+h2:last-of-type{
+    color: blue;
+}
+
+h2:only-of-type{
+    color:tomato;
+}

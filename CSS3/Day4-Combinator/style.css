@@ -1,0 +1,15 @@
+div h3{
+    background-color: blueviolet;
+}
+
+div > h2{
+    background-color: cadetblue;
+}
+
+div + h2{
+    background-color: chartreuse;
+}
+
+div ~ h3{
+    background-color: crimson;
+}

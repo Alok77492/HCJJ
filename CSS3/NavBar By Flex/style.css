@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+
+}
+
+.logo{
+    padding: 20px;
+    width: 50%;
+}
+
+.nav{
+    padding: 20px;
+    width: 50%;
+}
+
+.nav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+    font-style:italic;
+}
+
+.nav ul li:hover{
+    text-shadow: 1px 1px black;
+}

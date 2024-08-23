@@ -1,0 +1,16 @@
+#in{
+    display: inline;
+    border: 2px solid;
+}
+
+#bl{
+    display: block;
+    border: 2px solid;
+}
+
+#inbl{
+    display: inline-block;
+    border: 2px solid;
+    height: 100px;
+    width: 100px;
+}

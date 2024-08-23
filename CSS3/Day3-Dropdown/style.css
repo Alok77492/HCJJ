@@ -1,0 +1,31 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.nav{
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid hsl(0, 0%, 0%);
+    color: white;
+    width: 30%;
+}
+
+.nav ul{
+    list-style-type: none;
+}
+
+.nav ul li{
+    border: 1px solid;
+    width: 100%;
+    line-height: 25px;
+    display: none;
+}
+
+.nav:hover li{
+    display: block;
+}
+
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}

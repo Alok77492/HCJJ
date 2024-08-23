@@ -1,0 +1,21 @@
+p::first-letter{
+    color: tomato;
+    font-size: 30px;
+}
+
+body::first-line{
+    color: blue;
+}
+
+h3::selection{
+    background-color: yellowgreen;
+    color: red;
+}
+
+h3::before{
+    content: "Hi!! ";
+}
+
+h2::after{
+    content: " How are you?";
+}

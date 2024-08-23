@@ -1,0 +1,13 @@
+.box{
+    border: 2px solid blue;
+    height: 100px;
+    width: 200px;
+    background-color: #00800070;
+    position: sticky;
+    top: 40px;
+}
+
+.main{
+    border: 2px solid;
+    width: 400px;
+}
