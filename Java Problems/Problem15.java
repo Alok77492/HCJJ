@@ -10,6 +10,7 @@ public class Problem15
        int num1 = sc.nextInt();
        System.out.print("Enter the second number : ");
        int num2 = sc.nextInt();
+       sc.close();
        int temp;
        System.out.println("The number before swapping : "+num1+ " and "+num2);
        temp=num1;
