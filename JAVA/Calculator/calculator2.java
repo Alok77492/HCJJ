@@ -1,5 +1,5 @@
 import java.util.Scanner;
-class Calculator2
+class calculator2
 {
 	public static void add(){
 		System.out.println("This is add method");
