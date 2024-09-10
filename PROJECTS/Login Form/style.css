@@ -98,6 +98,7 @@ html,body{
 .wrapper form .signup-link{
     color: #4158d0;
     margin: 8px 0 0 10px;
+    color: #262626;
 }
 
 .wrapper form .signup-link{
@@ -116,4 +117,8 @@ html,body{
 .wrapper form .pass-link a:hover,
 .wrapper form .signup-link a:hover{
     text-decoration: underline;
+}
+
+.wrapper form .pass-link .remem{
+    color:#262626
 }
