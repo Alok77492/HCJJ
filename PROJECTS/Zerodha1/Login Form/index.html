@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="title">Login Form</div>
+
+        <form action="LoginServlet" method="post">
+            <div class="field">
+                <input type="email" required>
+                <label>Email Address</label>
+            </div>
+
+            <div class="field">
+                <input type="password" required>
+                <label>Password</label>
+            </div>
+            
+            <div class="pass-link"><input type="checkbox"> 
+                Remember me &nbsp <a href="#">Forget Password?</a>
+            </div>
+
+            <div class="field">
+                <input type="submit" value="Login">
+            </div>
+
+            <div class="signup-link">Not a member? 
+                <a href="Signup Form/index.html">Signup now</a><form action="RegisterServlet" method="post"></form>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>

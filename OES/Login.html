@@ -1,0 +1,124 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" 
+content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <!-- Bootstarp CSS --> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+ 
+    <!-- Font Awesome CSS --> 
+    <link rel="stylesheet" href="css/all.min.css"> 
+ 
+    <!-- Google Font --> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Ubuntu:wg
+ ht@300&display=swap" rel="stylesheet"> 
+ 
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="css/custom.css"> 
+     
+    <link href="./bootstrap/css/bootstrap-theme.min.css" 
+rel="stylesheet"> 
+    <link href="./bootstrap/css/jumbotron.css" 
+rel="stylesheet"> 
+ 
+    <title>Bookaholic</title> 
+</head> 
+<body> 
+    <!-- Start Navigation --> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    <nav class="navbar navbar-inverse bg-danger navbar
+top" style="height: 150px; border-bottom: 15px solid black;  
+border-left: 7px solid black;  border-right: 7px solid black;  
+border-top: 15px solid black; background-color: lightgrey; 
+background-image: url(images/2.gif); background-size: 
+40%; background-position: center; background-repeat: no
+repeat; "> 
+    <nav class="navbar navbar-expand-lg navbar-light"> 
+  <div class="container-fluid"> 
+    <a class="navbar-brand" href="index.php" style="height: 
+80px;font-family: papyrus;">Bookaholic</a> 
+    <span style="width: 700px; height: 0px; font-family: 
+copperplate;"><u>World of Books</u></span> 
+    <button class="navbar-toggler" type="button" data-bs
+toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+aria-controls="navbarNavAltMarkup" aria
+expanded="false" aria-label="Toggle navigation"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" 
+id="navbarNavAltMarkup"> 
+      <div class="navbar-nav"> 
+        <a class="nav-link active" aria-current="page" 
+href="index.php" >Home</a> 
+        <a class="nav-link" href="books.php">Books</a> 
+        <a class="nav-link" href="carts.php">My Cart</a> 
+        <a class="nav-link" href="about.php">Who we 
+are?</a> 
+      </div> 
+    </div> 
+  </div> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+</nav> 
+</nav> 
+     
+    <!-- Start Header Jumbotron --> 
+    <header class="jumbotron back-image" 
+style="background-image:url(images/1.gif);"> 
+        <div class="jumbotron jumbotron-fluid"> 
+        <div class="container-md mx-auto text-dark text
+center pt-5" style=" width: 500px; height: 290px; padding
+bottom: 0px; margin: 10px; "> 
+            <div class="page-header"> 
+ 
+ 
+    <div class="wrapper"> 
+        <h2>Login</h2> 
+        <p>Please fill in your credentials to login.</p> 
+        <form action="<?php echo 
+htmlspecialchars($_SERVER["PHP_SELF"]); ?>" 
+method="post"> 
+            <div style="font-size: 18px" class="form-group 
+<?php echo (!empty($username_err)) ? 'has-error' : ''; 
+?>"> 
+                <label>Username</label> 
+                <input type="text" name="username" 
+class="form-control" value="<?php echo $username; ?>"> 
+                <span class="help-block"><?php echo 
+$username_err; ?></span> 
+            </div>  
+             
+            <div style="font-size: 18px" class="form-group 
+<?php echo (!empty($password_err)) ? 'has-error' : ''; ?>"> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+                <label>Password</label> 
+                <input type="password" name="password" 
+class="form-control"> 
+                <span class="help-block"><?php echo 
+$password_err; ?></span> 
+            </div> 
+            <br> 
+            <div class="form-group"> 
+            <input type="submit" class="btn btn-primary" 
+value="Login"> 
+            </div> 
+            <br> 
+            <p>Don't have an account? <a 
+href="register.php">Sign up now</a>.</p> 
+        </form> 
+    </div> 
+    </header>     
+</body> 
+</html>

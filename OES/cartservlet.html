@@ -1,0 +1,196 @@
+<!DOCTYPE html> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+<html> 
+ <head> 
+  <title>My Cart</title> 
+  <script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jque
+ ry.min.js"></script> 
+  <link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/cs
+ s/bootstrap.min.css" /> 
+  <script 
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/b
+ ootstrap.min.js"></script> 
+ </head> 
+ <body> 
+    <!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" 
+content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <!-- Bootstarp CSS --> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+ 
+    <!-- Font Awesome CSS --> 
+    <link rel="stylesheet" href="css/all.min.css"> 
+ 
+    <!-- Google Font --> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Ubuntu:wg
+ ht@300&display=swap" rel="stylesheet"> 
+ 
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="css/custom.css"> 
+     
+    <link href="./bootstrap/css/bootstrap-theme.min.css" 
+rel="stylesheet"> 
+    <link href="./bootstrap/css/jumbotron.css" 
+rel="stylesheet"> 
+ 
+    <title>Bookaholic</title> 
+</head> 
+<body> 
+    <!-- Start Navigation --> 
+    <nav class="navbar navbar-inverse bg-danger navbar
+top" style="height: 150px; border-bottom: 15px solid black;  
+border-left: 7px solid black;  border-right: 7px solid black;  
+border-top: 15px solid black; background-color: lightgrey; 
+background-image: url(images/2.gif); background-size: 
+40%; background-position: center; background-repeat: no
+repeat; "> 
+    <nav class="navbar navbar-expand-lg navbar-light"> 
+  <div class="container-fluid"> 
+  <a class="navbar-brand" href="index.php" style="height: 
+10px; font-size: 55px; font-family: papyrus; color: 
+black;">Bookaholic</a> 
+    <span style="width: 700px; height: 90px; font-family: 
+copperplate; font-size: 16px;"><u>World of 
+Books</u></span> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    <button class="navbar-toggler" type="button" data-bs
+toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+aria-controls="navbarNavAltMarkup" aria
+expanded="false" aria-label="Toggle navigation"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" 
+id="navbarNavAltMarkup"> 
+      <div class="navbar-nav"> 
+        <a class="nav-link active" aria-current="page" 
+href="index.php" style="font-size: 16px;">Home</a> 
+        <a class="nav-link" href="books.php" style="font-size: 
+16px;">Books</a> 
+        <a class="nav-link" href="carts.php" style="font-size: 
+16px;">My Cart</a> 
+        <a class="nav-link" href="about.php" style="font-size: 
+16px;">Who we are?</a> 
+      </div> 
+    </div> 
+  </div> 
+</nav> 
+ 
+         
+ 
+        <div class="container-md mx-auto text-dark text
+center pt-5" style=" width: 450px; height: 240px; padding
+bottom: 100px; margin: 0px; "> 
+  <br /> 
+   
+   <?php 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    $query = "SELECT * FROM tbl_product ORDER BY id 
+ASC"; 
+    $result = mysqli_query($connect, $query); 
+    if(mysqli_num_rows($result) > 0) 
+    { 
+     while($row = mysqli_fetch_array($result)) 
+     { 
+    ?> 
+    
+    </form> 
+   </div> 
+   <?php 
+     } 
+    } 
+   ?> 
+   
+   <h1 style="margin-right: 680px"><u>Order 
+Details</u></h1> 
+   <h2 style="margin-left: 580px;">Add more <a href = 
+"books.php">Books....</a></h2> 
+   <br> 
+   <br> 
+   <br> 
+   <div class="table"> 
+    <table class="table table-bordered"> 
+     <tr> 
+      <th width="30%">Item Name</th> 
+      <th width="20%">Quantity</th> 
+      <th width="20%">Price</th> 
+      <th width="25%">Total</th> 
+      <th width="10%">Action</th> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+     </tr> 
+     <?php 
+     if(!empty($_SESSION["shopping_cart"])) 
+     { 
+      $total = 0; 
+      foreach($_SESSION["shopping_cart"] as $keys => 
+$values) 
+      { 
+     ?> 
+     <tr> 
+      <td><?php echo $values["item_name"]; ?></td> 
+      <td><?php echo $values["item_quantity"]; ?></td> 
+      <td>₹ <?php echo $values["item_price"]; ?></td> 
+      <td>₹ <?php echo 
+number_format($values["item_quantity"] * 
+$values["item_price"], 2);?></td> 
+      <td><a href="carts.php?action=delete&id=<?php echo 
+$values["item_id"]; ?>"><span class="text
+danger">Remove</span></a></td> 
+     </tr> 
+     <?php 
+       $total = $total + ($values["item_quantity"] * 
+$values["item_price"]); 
+      } 
+     ?> 
+     <tr> 
+      <td colspan="3" align="right">Total</td> 
+      <td align="right"> ₹ <?php echo number_format($total, 2); 
+?></td> 
+      <td></td> 
+     </tr> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+     <?php 
+     } 
+     ?> 
+       
+                 
+       
+    </table> 
+   </div> 
+  </div> 
+ </div> 
+ <br /> 
+ <br> 
+ <br> 
+ <a href= "checkout.php" class="btn btn-info" role="button" 
+style="width: 160px; margin-left: 570px;">Checkout</a> 
+    </header> 
+  
+ </body> 
+</html>

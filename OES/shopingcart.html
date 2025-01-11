@@ -1,0 +1,154 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" 
+content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, 
+initial-scale=1.0"> 
+    <!-- Bootstarp CSS --> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+ 
+    <!-- Font Awesome CSS --> 
+    <link rel="stylesheet" href="css/all.min.css"> 
+ 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    <!-- Google Font --> 
+    <link 
+href="https://fonts.googleapis.com/css2?family=Ubuntu:wg
+ ht@300&display=swap" rel="stylesheet"> 
+ 
+    <!-- Custom CSS --> 
+    <link rel="stylesheet" href="css/custom.css"> 
+     
+    <link href="./bootstrap/css/bootstrap-theme.min.css" 
+rel="stylesheet"> 
+    <link href="./bootstrap/css/jumbotron.css" 
+rel="stylesheet"> 
+ 
+    <title>Bookaholic</title> 
+</head> 
+<body> 
+    <!-- Start Navigation --> 
+    <nav class="navbar navbar-inverse bg-danger navbar
+top" style="height: 150px; border-bottom: 15px solid black;  
+border-left: 7px solid black;  border-right: 7px solid black;  
+border-top: 15px solid black; background-color: lightgrey; 
+background-image: url(images/2.gif); background-size: 
+40%; background-position: center; background-repeat: no
+repeat; "> 
+    <nav class="navbar navbar-expand-lg navbar-light"> 
+  <div class="container-fluid"> 
+    <a class="navbar-brand" href="index.php" style="height: 
+30px;font-family: papyrus; font-size: 50px; color: 
+black;">Bookaholic</a> 
+    <span style="width: 400px; height: 0px; font-family: 
+copperplate;"><u>World of Books</u></span> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    <button class="navbar-toggler" type="button" data-bs
+toggle="collapse" data-bs-target="#navbarNavAltMarkup" 
+aria-controls="navbarNavAltMarkup" aria
+expanded="false" aria-label="Toggle navigation"> 
+      <span class="navbar-toggler-icon"></span> 
+    </button> 
+    <div class="collapse navbar-collapse" 
+id="navbarNavAltMarkup"> 
+      <div class="navbar-nav"> 
+        <a class="nav-link active" aria-current="page" 
+href="index.php"style= "padding-right: 20px;" >Home</a> 
+        <a class="nav-link" href="books.php"style= "padding
+right: 20px;">Books</a> 
+        <a class="nav-link" href="carts.php">My Cart</a> 
+        <a class="nav-link" href="about.php">Who we 
+are?</a> 
+        <a href="reset-password.php" class="btn btn
+warning" style="width: 140px; margin: 25px; margin
+bottom: 10px;">Reset Password</a> 
+        <a href="logout.php" class="btn btn-info" 
+style="width: 100px; margin: 25px; margin-bottom: 10px; 
+padding-left: 10px;">Sign Out</a> 
+      </div> 
+    </div> 
+  </div> 
+</nav> 
+</nav> 
+ 
+     
+     
+ 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+    <!-- Start Header Jumbotron --> 
+    <header> 
+ 
+  <title>Books</title> 
+  <script 
+src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jque
+ ry.min.js"></script> 
+  <link rel="stylesheet" 
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/cs
+ s/bootstrap.min.css" /> 
+  <script 
+src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/b
+ ootstrap.min.js"></script> 
+ 
+  <div class="container"> 
+   <?php 
+    $query = "SELECT * FROM tbl_product ORDER BY id 
+ASC"; 
+    $result = mysqli_query($connect, $query); 
+    if(mysqli_num_rows($result) > 0) 
+    { 
+     while($row = mysqli_fetch_array($result)) 
+     { 
+    ?> 
+   <div class="col-sm-4"> 
+    <form method="post" 
+action="carts.php?action=add&id=<?php echo $row["id"]; 
+?>"> 
+     <div style="border:1px solid #333; background
+color:#f1f1f1; border-radius:0px; margin-top: 20px; 
+padding:5px 5px 5px 5px;"> 
+ 
+ 
+                                                                                                 ONLINE EXAMINATION 
+ 
+      <img src="images/<?php echo $row["image"]; ?>" 
+class="img-responsive" width="100" height="100"/> 
+ 
+      <h4 class="text-info"><?php echo $row["name"]; ?></h4> 
+ 
+      <h4 class="text-danger"> ₹ <?php echo $row["price"]; 
+?></h4> 
+ 
+      <input type="text" name="quantity" value="1" class="form
+control" /> 
+ 
+      <input type="hidden" name="hidden_name" 
+value="<?php echo $row["name"]; ?>" /> 
+ 
+      <input type="hidden" name="hidden_price" value="<?php 
+echo $row["price"]; ?>" /> 
+ 
+      <input type="submit" name="add_to_cart" style="margin
+top:5px;" class="btn btn-success" value="Add to Cart" /> 
+ 
+     </div> 
+    </form> 
+   </div> 
+   <?php 
+     } 
+    } 
+   ?> 
+ 
+    </header> 
+ </body> 
+</html> 
